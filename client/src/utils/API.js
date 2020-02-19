@@ -2,6 +2,11 @@ import axios from "axios";
 
 export default {
 
+    //google api requests
+    getGoogleBooks: function (query) {
+        return axios.get("https://www.googleapis.com/books/v1/volumes?q=" + query);
+    },
+    //server api requests
     getAll: function () {
         return axios.get("api/books");
     },

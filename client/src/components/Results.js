@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Result from './Result';
 import { useStoreContext } from "../utils/GlobalState";
 
@@ -6,12 +6,11 @@ function Results(props) {
     const [state, dispatch] = useStoreContext();
 
     return (
-        <div className="container">
-            <h3>{props.title}</h3>
+        <div className="container my-4">
             <div>
                 {
                     state.results.map((result, index) => {
-                        return <Result key={index} result={result} />
+                        return <Result key={index} index={index+1} result={result} />
                     })
                 }
             </div>

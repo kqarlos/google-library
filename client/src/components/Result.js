@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Result({result}) {
+function Result({index, result}) {
 
 
     return (
-        <div className="card">
+        <div className="card my-3">
             <div className="card-body">
-                <h4 className="card-title">{result.title}</h4>
+                <h4 className="card-title">{index}. {result.title}</h4>
                 <h5 className="card-subtitle">{result.subtitle}</h5>
                 <h6 className="card-subtitle text-muted">{result.author}</h6>
                 <div className="d-flex">
