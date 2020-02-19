@@ -15,7 +15,7 @@ function BookSearch() {
             console.log(res.data.items);
             var books = res.data.items.map(book => {
                 return ({
-                    authors: book.volumeInfo.authors,
+                    authors: book.volumeInfo.authors.join(" "),
                     description: book.volumeInfo.description,
                     image: book.volumeInfo.imageLinks.thumbnail,
                     link: book.volumeInfo.previewLink,

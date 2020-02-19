@@ -3,11 +3,12 @@ const Schema = mongoose.Schema;
 
 //creates schema
 const bookSchema = new Schema({
-  title:  String, 
-  author: String,
-  picture:   String,
+  title: String,
+  authors: String,
+  image: String,
   description: String,
-  link: String
+  link: String,
+  date: String
 });
 
 //models schema
