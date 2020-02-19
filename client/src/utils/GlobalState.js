@@ -1,6 +1,7 @@
 import React, { createContext, useReducer, useContext } from "react";
 import {
-    SET_SEARCH_RESULTS
+    SET_SEARCH_RESULTS,
+    SET_SAVED_RESULTS
 } from "./actions";
 
 const StoreContext = createContext();
@@ -12,6 +13,11 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 results: action.searchResults,
+            };
+        case SET_SAVED_RESULTS:
+            return {
+                ...state,
+                saved: action.savedResults,
             };
         // case UPDATE_ITEMS:
         //     return {

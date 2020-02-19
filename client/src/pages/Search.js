@@ -2,8 +2,10 @@ import React, { useEffect } from 'react';
 import Jumbotron from '../components/Jumbotron';
 import BookSearch from '../components/BookSearch';
 import Results from '../components/Results';
+import { useStoreContext } from "../utils/GlobalState";
 
 function Search() {
+    const [state, dispatch] = useStoreContext();
 
     useEffect(() => {
         console.log("LOADED");
@@ -13,7 +15,7 @@ function Search() {
         <div>
             <Jumbotron />
             <BookSearch />
-            <Results />
+            <Results results={state.results} button="Save"/>
         </div>
     );
 
