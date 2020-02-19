@@ -19,7 +19,8 @@ function BookSearch() {
                     description: book.volumeInfo.description,
                     image: book.volumeInfo.imageLinks.thumbnail,
                     link: book.volumeInfo.previewLink,
-                    title: book.volumeInfo.title
+                    title: book.volumeInfo.title,
+                    date: book.volumeInfo.publishedDate
                 });
             });
             dispatch({
