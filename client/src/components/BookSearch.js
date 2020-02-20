@@ -15,7 +15,6 @@ function BookSearch() {
             console.log(res.data.items);
             var books = res.data.items.map(book => {
                 return ({
-                    // condition ? valueWhenTrue : valueWhenFalse;
                     authors: book.volumeInfo.authors ? book.volumeInfo.authors.join(" ") : "",
                     description: book.volumeInfo.description ? book.volumeInfo.description : "",
                     image: book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : "",
