@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { StoreProvider } from './utils/GlobalState';
 import Saved from './pages/Saved';
 import Search from './pages/Search';
@@ -14,8 +14,11 @@ function App() {
       <div>
         <StoreProvider>
           <Nav />
-          <Route exact path="/" component={Search} />
-          <Route exact path="/saved" component={Saved} />
+          <Switch>
+            <Route exact path="/" component={Search} />
+            <Route exact path="/saved" component={Saved} />
+            <Route exact path="/:nomatch" component={Search} />
+          </Switch>
         </StoreProvider>
       </div>
     </Router>
