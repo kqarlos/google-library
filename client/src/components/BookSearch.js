@@ -15,12 +15,13 @@ function BookSearch() {
             console.log(res.data.items);
             var books = res.data.items.map(book => {
                 return ({
-                    authors: book.volumeInfo.authors.join(" "),
-                    description: book.volumeInfo.description,
-                    image: book.volumeInfo.imageLinks.thumbnail,
-                    link: book.volumeInfo.previewLink,
-                    title: book.volumeInfo.title,
-                    date: book.volumeInfo.publishedDate
+                    // condition ? valueWhenTrue : valueWhenFalse;
+                    authors: book.volumeInfo.authors ? book.volumeInfo.authors.join(" ") : "",
+                    description: book.volumeInfo.description ? book.volumeInfo.description : "",
+                    image: book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : "",
+                    link: book.volumeInfo.previewLink ? book.volumeInfo.previewLink : "",
+                    title: book.volumeInfo.title ? book.volumeInfo.title : "",
+                    date: book.volumeInfo.publishedDate ? book.volumeInfo.publishedDate : ""
                 });
             });
             dispatch({

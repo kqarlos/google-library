@@ -1,8 +1,7 @@
 import React, { createContext, useReducer, useContext } from "react";
 import {
     SET_SEARCH_RESULTS,
-    SET_SAVED_RESULTS,
-    REMOVE_SAVED_BOOK
+    SET_SAVED_RESULTS
 } from "./actions";
 
 const StoreContext = createContext();
@@ -31,18 +30,6 @@ const StoreProvider = ({ value = [], ...props }) => {
         results: [],
         currentBook: {},
         saved: []
-        // searchItems: [],
-        // currentItem: {
-        //     // _id: 0,
-        //     // title: "",
-        //     // price: "",
-        //     // description: ""
-        // },
-        // categories: [],
-        // cart: [],
-        // cartCount: {},
-        // loggedin: false,
-        // userId: ""
     });
     return <Provider value={[state, dispatch]} {...props} />;
 };
