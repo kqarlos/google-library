@@ -1,6 +1,7 @@
 import React from 'react';
 import API from "../utils/API";
 import { useStoreContext } from "../utils/GlobalState";
+import { SET_SAVED_RESULTS } from '../utils/actions';
 
 
 function Result({ index, result, button }) {
@@ -17,11 +18,17 @@ function Result({ index, result, button }) {
 
     function remove() {
         console.log("REMOVING", result);
-        //TODO COMPLETE API CALL TO DELETE,
-        //NEED BOOK _ID
-        // API.delete(_id).then(res => {
-        //     console.log(res);
-        // })
+        console.log(result._id);
+        API.delete(result._id).then(res => {
+            console.log(res);
+            API.getAll().then(res => {
+                console.log(res.data);
+                dispatch({
+                    type: SET_SAVED_RESULTS,
+                    savedResults: res.data
+                });
+            });
+        });
     }
 
 

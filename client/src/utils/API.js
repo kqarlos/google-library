@@ -14,6 +14,6 @@ export default {
         return axios.post("api/books", book);
     },
     delete: function (_id) {
-        return axios.delete("api/users/" + _id);
+        return axios.delete("api/books/" + _id);
     }
 }

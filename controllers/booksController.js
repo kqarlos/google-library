@@ -18,6 +18,7 @@ module.exports = {
     },
 
     remove: function (req, res) {
+        console.log("REMOVE REQ", req.params)
         db.findById({ _id: req.params.id })
             .then(book => book.remove())
             .then(book => res.json(book))
