@@ -138,7 +138,7 @@ It correctly bundles React in production mode and optimizes the build for the be
     <a href="https://nodejs.org/en/"><img src="https://img.shields.io/badge/-Node-orange?style=for-the-badge" alt="Node" /></a>
     <a href="https://www.npmjs.com/package/express"><img src="https://img.shields.io/badge/-Express-green?style=for-the-badge" alt="Express" /></a>
     <a href="https://reactjs.org/"><img src="https://img.shields.io/badge/-React-blue?style=for-the-badge" alt="React" /></a>
-    <a href="https://www.mongodb.com/"><img src="https://img.shields.io/badge/-Express-green?style=for-the-badge" alt="MongoDB" /></a>
+    <a href="https://www.mongodb.com/"><img src="https://img.shields.io/badge/-MongoDB-green?style=for-the-badge" alt="MongoDB" /></a>
 </p>
 
 ## License
