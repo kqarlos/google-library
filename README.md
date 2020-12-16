@@ -1,5 +1,27 @@
 # Google Books Search
 
+
+</br>
+<p align="center">
+    <img src="https://img.shields.io/github/languages/count/kqarlos/google-library?style=for-the-badge" alt="Languages" />
+    <img src="https://img.shields.io/github/languages/top/kqarlos/google-library?style=for-the-badge" alt="Top Language" />
+    <img src="https://img.shields.io/github/languages/code-size/kqarlos/google-library?style=for-the-badge" alt="Code Size" />
+    <img src="https://img.shields.io/github/repo-size/kqarlos/google-library?style=for-the-badge" alt="Repo Size" />   
+    <img src="https://img.shields.io/tokei/lines/github/kqarlos/google-library?style=for-the-badge" alt="Total Lines" />
+    <img src="https://img.shields.io/github/package-json/dependency-version/kqarlos/google-library/body-parser?style=for-the-badge" alt="body-parser Version" />
+    <img src="https://img.shields.io/github/package-json/dependency-version/kqarlos/google-library/express?style=for-the-badge" alt="Express Version" />
+    <img src="https://img.shields.io/github/package-json/dependency-version/kqarlos/google-library/cors?style=for-the-badge" alt="Cors Version" />
+    <img src="https://img.shields.io/github/package-json/dependency-version/kqarlos/google-library/if-env?style=for-the-badge" alt="if-env Version" />
+    <img src="https://img.shields.io/github/last-commit/kqarlos/google-library?style=for-the-badge" alt="Last Commit" />  
+    <img src="https://img.shields.io/github/issues/kqarlos/google-library?style=for-the-badge" alt="Issues" />  
+    <img src="https://img.shields.io/github/followers/kqarlos?style=social" alt="Followers" />  
+</p>
+
+
+## Description
+
+Look through Google books and keep a list of your favorites.
+
 ## Site Pictures
 
 1. Live Site
