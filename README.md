@@ -1,6 +1,5 @@
 # Google Books Search
 
-
 </br>
 <p align="center">
     <img src="https://img.shields.io/github/languages/count/kqarlos/google-library?style=for-the-badge" alt="Languages" />
@@ -22,7 +21,47 @@
 
 Look through Google books and keep a list of your favorites.
 
-## Site Pictures
+## Table of Contents
+
+* [Installation](#installation)
+* [Usage](#usage)
+    * [Screenshots](#screenshots)
+    * [Snippets](#snippets)
+* [Credits](#credits)
+* [License](#license)
+
+
+
+## Installation
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+
+<p align="center">
+    <a href="https://google-library-mern.herokuapp.com/"><img src="https://img.shields.io/badge/-👉 See Live Site-success?style=for-the-badge"  alt="Live Site" /></a>
+</p>
+
+## Usage
+
+### Screenshots
 
 1. Live Site
 
@@ -30,7 +69,7 @@ Look through Google books and keep a list of your favorites.
 
 
 
-## Code Snippets
+### Snippets
 
 
 1. Book Search
@@ -79,27 +118,6 @@ Look through Google books and keep a list of your favorites.
 ```
 * This function runs as soon as the _Saved Books_ page loads. It calls _API.getAll()_ function. This function goes into the database and get all the books that have been saved by the user. _res.data_ contains an array of books returned by the _getAll()_ function. This is used to update the global state and display these books to the user.
 
-## Available Scripts for cloned repos
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
 ## Built With
 
@@ -115,9 +133,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 
 
-## Deployed Link
-
-* [See Live Site](https://google-library-mern.herokuapp.com/)
 
 ## Author
 
